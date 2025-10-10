@@ -1,1 +1,3 @@
 # RK_INSUREFLOW_SERVICES_SYSTEM
+The Insurance Management System is a software application designed to streamline and automate the operations of an insurance company. The primary goal of this system is to improve efficiency, reduce paperwork, and ensure secure and accurate management of customer and policy data.
+This project focuses on managing different types of insurance policies (such as life, health, auto, and property insurance), customer information, premium payments, claims processing, and report generation. The system also provides administrative functionality for managing agents, users, and policy approval workflows.
