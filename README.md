@@ -37,6 +37,10 @@ http://127.0.0.1:8000/
 ### step 6 : Now Finally you can run your web application:
   >python manage.py runserver
 
+### DEMO VIDEO :
+
+https://github.com/user-attachments/assets/8aa66554-fd44-4208-9494-9a0c6acdf960
+
 
 ## SCREENSHOTS
 ### Home Page
@@ -45,18 +49,33 @@ http://127.0.0.1:8000/
 
 ### Customer Login||Create Account
 
+<img width="1918" height="933" alt="image" src="https://github.com/user-attachments/assets/ebdbbdb5-cdf6-4e0b-af2b-f5fd3c32f2bc" />
+
 ### Admin Login
+
+<img width="1919" height="927" alt="image" src="https://github.com/user-attachments/assets/db5e9fde-b032-42e1-aa6e-6ccdecda560d" />
 
 ### About Us
 
+<img width="1915" height="931" alt="image" src="https://github.com/user-attachments/assets/60046291-2006-4a0f-8f9d-254d109f76c5" />
+
 ### Contact Us
+
+<img width="1912" height="930" alt="image" src="https://github.com/user-attachments/assets/c4684cee-371c-4a9e-9fe4-8ec37fcb359c" />
 
 ### Customer Dashboard
 
+<img width="1916" height="933" alt="image" src="https://github.com/user-attachments/assets/602b62e3-86f7-43c6-9cb7-fa2167d57d88" />
+
+### Admin Dashboard
+
+<img width="1914" height="926" alt="image" src="https://github.com/user-attachments/assets/d9e55ac8-2941-453e-adcd-e978ad7d589d" />
+
+
+***Ramakant Chaudhari***
 
 
 
-https://github.com/user-attachments/assets/8aa66554-fd44-4208-9494-9a0c6acdf960
 
 
 
