@@ -52,6 +52,7 @@ http://127.0.0.1:8000/
 ### Contact Us
 
 ### Customer Dashboard
+[![Watch the video]("C:\Users\Victus\Videos\Screen Recordings\rk insureflow services system.mp4")]("C:\Users\Victus\Videos\Screen Recordings\rk insureflow services system.mp4")
 
 
 
