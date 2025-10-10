@@ -31,11 +31,12 @@ https://code.visualstudio.com/download
 
 >python manage.py makemigrations
 
+### step 6 : Now Finally you can run your web application:
+  >python manage.py runserver
+
 ### step 7 :Now enter following URL in Your Browser Installed On Your Pc
 http://127.0.0.1:8000/
 
-### step 6 : Now Finally you can run your web application:
-  >python manage.py runserver
 
 ### DEMO VIDEO :
 
