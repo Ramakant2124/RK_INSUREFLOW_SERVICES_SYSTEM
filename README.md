@@ -19,21 +19,26 @@ Python - https://www.python.org/ftp/python/3.13.3/python-3.13.3-amd64.exe
 https://code.visualstudio.com/download
 
 ### step 3 : Install Django 
->pip install django==3.0.5
-
->pip install django-widget-tweaks
-
+```
+pip install django==3.0.5
+```
+```
+pip install django-widget-tweaks
+```
 ### step 4 : Install all the Packages or Modules inside requirements.txt file
->pip install -r requirements.txt
-
+```
+pip install -r requirements.txt
+```
 ### step 5 : Now make Migrations and Migrate for saving the changes:
->python manage.py migrate
-
->python manage.py makemigrations
-
+```
+python manage.py migrate
+```
+```
+python manage.py makemigrations
+```
 ### step 6 : Now Finally you can run your web application:
 ```
-  >python manage.py runserver
+  python manage.py runserver
 ```
 ### step 7 :Now enter following URL in Your Browser Installed On Your Pc
 http://127.0.0.1:8000/
