@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+          <title>RK INSUREFLOW SERVICES SYSTEM</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+     background: linear-gradient(135deg, #00b3ffff, #feffffff, #00b3ffff);
+
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+
+    .jumbotron {
+      margin: 0 auto;
+      margin-top: 40px;
+      max-width: 700px;
+      background: rgba(255, 255, 255, 0); /* transparent white */
+      border-radius: 15px;
+      padding: 2rem;
+      backdrop-filter: blur(10px); /* Glass effect */
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+      color: #000000ff;
+      text-align: center;
+    }
+
+    .jumbotron h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .jumbotron p {
+      font-size: 1.2rem;
+    }
+
+    .btn {
+      margin: 0.5rem;
+        background: linear-gradient(135deg, #032b3bff, #feffffff, #03202dff);
+     
+    }
+  </style>
+
+</head>
+
+<body>
+
+  {% include "insurance/navbar.html" %}
+  <br><br>
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Hello, Customer</h1>
+    <p class="lead">Welcome to Insurance Management System</p>
+    <hr class="my-4">
+    <p>You can access various features after Login.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="customersignup" role="button">Create Your Account</a>
+      <a class="btn btn-primary btn-lg" href="customerlogin" role="button">Login</a>
+    </p>
+    <br><br><br>
+  </div>
+
+  {% include "insurance/footer.html" %}
+</body>
+
+</html>

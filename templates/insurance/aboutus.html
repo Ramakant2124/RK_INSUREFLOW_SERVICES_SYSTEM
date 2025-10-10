@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RK INSUREFLOW SERVICES SYSTEM</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <style>
+        body {
+  background: linear-gradient(135deg, #00b3ffff, #feffffff, #00b3ffff);
+        }
+
+        /* About Section Container */
+        .about {
+            display: flex;
+            flex-direction: column;
+            max-width: 1450px;
+            height: auto;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* About Us Header Box */
+        .about_us {
+            text-align: center;
+            margin-top: 1%;
+            background: rgba(255, 255, 255, 0.159);
+            border-radius: 25px;
+            border: 2px solid rgb(255, 255, 255);
+            padding: 20px;
+        }
+
+        .about_us p {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Developer Image Section */
+        .about_img {
+            margin-top: 2%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.159);
+            border-radius: 30px;
+            border: 3px solid rgb(255, 255, 255);
+            padding: 30px;
+        }
+
+        .about_img h2 {
+            margin-bottom: 2rem;
+        }
+
+        .about_img .images {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .about_img .images div {
+            text-align: center;
+        }
+
+        .about_img .images img {
+            height: 250px;
+            border-radius: 25px;
+            border: 2px solid rgb(255, 255, 255);
+        }
+
+        .about_img .images p {
+            margin-top: 1rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Jumbotron Footer */
+        .jumbotron {
+            margin: 0;
+            padding: 2rem;
+            background-color: #f8f9fa;
+            border-top: 1px solid #ccc;
+        }
+
+        .jumbotron h1,
+        .alert {
+            text-align: center;
+        }
+
+        .jumbotron p.lead {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    {% include "insurance/navbar.html" %}
+
+  
+    <!-- About Section -->
+    <div class="about">
+        <div class="about_us">
+            <h2>About Us</h2>
+            <p>“Every month that you send a check to the life insurance company, you're making a bet with them. Don't worry, one day you'll win.”</p>
+      <br>  <p>Explore our Website.</p><br>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="/" role="button">HOME</a>
+        </p>
+        
+          </div>
+
+        <!-- Developers Section -->
+        <div class="about_img">
+            <h2>Our Developers</h2>
+            <div class="images">
+                <div>
+                    <img src="{% static 'image/Ramakant.jpg' %}" alt="Mr. Ramakant Chaudhari" title="Ramakant Chaudhari">
+                    <p>Mr. Ramakant Chaudhari<br><small>Founder of RK INSUREFLOW SERVICES SYSTEM</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include "insurance/footer.html" %}
+
+</body>
+
+</html>

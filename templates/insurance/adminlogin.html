@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+{% load widget_tweaks %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+        <title>RK INSUREFLOW SERVICES SYSTEM</title>
+
+    <style media="screen">
+     @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,300,600);
+
+*{box-sizing:border-box;}
+
+body {
+  position: relative;
+  font-family: 'Open Sans', helvetica, arial, sans;
+  background: linear-gradient(135deg, #00b3ffff, #feffffff, #00b3ffff);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+
+@grey:#2a2a2a;
+@blue:#1fb5bf;
+.log-form {
+  width: 40%;
+  min-width: 320px;
+  max-width: 475px;
+  background: rgba(255, 255, 255, 0.3); /* 30% transparent white */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  padding: 2em;
+  border-radius: 4px;
+  backdrop-filter: blur(10px); /* optional: adds a nice blur effect behind */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+}
+
+  
+  box-shadow: 0px 2px 5px rgba(0,0,0,.25);
+  
+  @media(max-width: 40em){
+    width: 95%;
+    position: relative;
+    margin: 2.5% auto 0 auto;
+    left: 0%;
+  -webkit-transform: translate(0%,0%);
+-moz-transform: translate(0%,0%);
+-o-transform: translate(0%,0%);
+-ms-transform: translate(0%,0%);
+transform: translate(0%,0%);
+  }
+  
+  form {
+    display: block;
+    width: 100%;
+    padding: 2em;
+  }
+  
+  h2 {
+    width: 100%;
+    color: lighten(@grey, 20%);
+    font-family: 'open sans condensed';
+    font-size: 1.35em;
+    display: block;
+    background:@grey;
+    width: 100%;
+    text-transform: uppercase;
+    padding: .75em 1em .75em 1.5em;
+    box-shadow:inset 0px 1px 1px fadeout(white, 95%);
+    border: 1px solid darken(@grey, 5%);
+    //text-shadow: 0px 1px 1px darken(@grey, 5%);
+    margin: 0;
+    font-weight: 200;
+  }
+  
+  input {
+    display: block;
+    margin: auto auto;
+    width: 100%;
+    margin-bottom: 2em;
+    padding: .5em 0;
+    border: none;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 1.25em;
+    color: #757575;
+    &:focus {
+      outline: none;
+    }
+  }
+  
+ .btn {
+  background: #060fffff; /* red color */
+  border: 1px solid #000dffff; /* darker red border */
+  padding: 0.5em 2em;
+  color: white;
+  cursor: pointer;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transition: background 0.3s ease;
+  border-radius: 3px;
+  font-size: 1em;
+}
+
+.btn:hover {
+  background: #0044ffff; /* lighter red on hover */
+}
+
+.btn:active {
+  background: #1100ffff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.9);
+}
+
+  
+ 
+  
+}
+
+
+
+
+    </style>
+  </head>
+  <body>
+    {% include "insurance/navbar.html" %}
+
+
+
+<div class="log-form">
+  <h2 class="text-center"><b>LOGIN YOUR ACCOUNT</b></h2><br>
+  <form method="post">
+   {% csrf_token %}
+     {% render_field form.username class="form-control" placeholder="Username" %}
+     <br>
+    {% render_field form.password class="form-control" placeholder="Password" %}
+    <br>
+    <button type="submit" class="btn primary text-center">Login</button>
+    
+  </form>
+</div><!--end log form -->
+
+
+<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+{% include "insurance/footer.html" %}
+  </body>
+</html>

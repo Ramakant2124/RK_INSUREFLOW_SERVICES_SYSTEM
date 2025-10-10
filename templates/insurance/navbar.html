@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>RK INSUREFLOW SERVICES SYSTEM</title>
+
+  <!-- Bootstrap 4 & Font Awesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- jQuery and Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <style>
+    /* Navbar styles */
+    .navbar-gradient {
+      background: linear-gradient(to right, #052478ff, #ffffffff, #042682ff); /* Black to dark gray gradient */
+    }
+
+    .navbar-brand {
+      font-size: 20px;
+      font-family: monospace;
+    }
+
+    .navbar-nav .nav-link {
+      color: #ffffff !important;
+      margin-left: 10px;
+    }
+
+    .navbar-nav .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    body {
+      padding-top: 70px; /* Ensure body content doesn’t hide under fixed navbar */
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-gradient">
+    <a class="navbar-brand" href="/">
+      <span style="font-family: Gill; font-size: 1.5rem;">RK INSUREFLOW SERVICES SYSTEM</span>
+    </a>
+
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+  <div class="navbar-nav ml-auto">
+    <a href="/customer/customerclick" class="nav-item nav-link">Customer</a>
+    <a href="/adminlogin" class="nav-item nav-link">Admin</a>
+    <a href="/aboutus" class="nav-item nav-link">About Us</a>
+    <a href="/contactus" class="nav-item nav-link">Contact Us</a>
+  </div>
+</div>
+
+  </nav>
+
+</body>
+
+</html>

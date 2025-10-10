@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>RK INSUREFLOW SERVICES SYSTEM</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Optionally include Bootstrap for form styling (if needed) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #00b3ffff, #feffffff, #00b3ffff);
+    min-height: 100vh;
+}
+
+  .contact{margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contactus{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contactus_form{
+    border: 3px solid rgb(255, 255, 255);
+    width: 100%;
+    height: 500px;
+    max-width: 400px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.159);
+}
+
+.contactus_details{
+    border: 3px solid rgb(255, 255, 255);   
+    width: 100%;
+    height: 500px;
+    max-width: 400px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.445);
+    
+}
+.contactus_details b {
+    color: #000000ff;
+    
+}
+.contactus_details  h4{
+color: #110d0d;
+}
+
+.contactus_details a{
+    text-decoration: none;
+    color: rgb(15, 17, 18);
+}
+</style>
+<body>
+    {% include "insurance/navbar.html" %}
+
+    <div class="contact">
+        <div class="heading">
+            <h2 style="text-align: center;">Contact Us</h2>
+        </div>
+
+        <div class="contactus">
+            <!-- Left Side: Django Form -->
+            <div class="contactus_form">
+                <br><h2 style="text-align: center;">Send Us Your Valuable Feedback!</h2><br>
+                <form method="POST" autocomplete="off">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        {{ form.as_p }}
+                        <br>
+                        <input type="submit" value="Send Message" class='btn btn-primary btn-lg' style="width: 100%;">
+                    </div>
+                </form>
+            </div>
+
+            <!-- Right Side: Static Contact Details -->
+            <div class="contactus_details">
+                <br><h2>Contact Us Details</h2><br>
+                <p><b>Email ID :</b> chaudhariramakant754@gmail.com</p>
+                <p><b>Contact :</b> 9834777647</p>
+                <p><b>Address :</b> At-Post Arjun Nagar Kasoda</p>
+                <p><b>Office Hours :</b> 8:00 am to 8:00 pm</p>
+
+                <p><b>Office Location :</b></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.112840149785!2d75.32891307504194!3d21.143013083595434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd9418eccefe0f3%3A0xf7d64c3269ab0bc6!2sRamakant%20Plywood%2C%20Kasoda%2C%20Maharashtra%20425110!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin"
+                        width="350" height="188" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    {% include "insurance/footer.html" %}
+</body>
+</html>

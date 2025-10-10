@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+    <style>
+        /* Full-page background image using Django static tag */
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("{% static 'image/bghome.jpg' %}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Optional: transparent background for content blocks */
+        .jumbotron {
+            background-color: rgba(255, 255, 255, 0.85); /* Light white overlay */
+            padding: 2rem;
+            margin: 0;
+        }
+
+        .xyz {
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    {% include "insurance/navbar.html" %}
+
+  
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="jumbotron" style="background-color: rgba(255, 255, 255, 0.36); padding: 2rem; margin: 0;">
+    <p class="lead text-center" style="color: #ffffffff;">
+        “Whole life does two things for you: Protects your family and allows you to save for your future.”
+    </p>
+</div>
+
+<br><br>
+    {% include "insurance/footer.html" %}
+</body>
+
+</html>
