@@ -8,9 +8,7 @@ This is RK_INSUREFLOW_SERVICES_SYSTEM project built in Python Django Framework a
 **Only For Education Purpose** 
 
 ## Introduction of project :
-The RK_INSUREFLOW_SERVICES_SYSTEM is a software application designed to streamline and automate the operations of an insurance company. The primary goal of this system is to improve efficiency, reduce paperwork, and ensure secure and accurate management of customer and policy data.
->py manage.py createsuperuser
-
+The RK_INSUREFLOW_SERVICES_SYSTEM is a software application designed to streamline and automate the operations of an insurance company. The primary goal of this system is to improve efficiency, reduce paperwork, and ensure secure and accurate management of customer and policy data.""py manage.py createsuperuser""
 This project focuses on managing different types of insurance policies (such as life, health, auto, and property insurance), customer information, premium payments, claims processing, and report generation. The system also provides administrative functionality for managing agents, users, and policy approval workflows.
 
 ## Project Setup :  
@@ -38,6 +36,7 @@ http://127.0.0.1:8000/
 
 ### step 6 : Now Finally you can run your web application:
   >python manage.py runserver
+
 
 ## SCREENSHOTS
 ### Home Page
