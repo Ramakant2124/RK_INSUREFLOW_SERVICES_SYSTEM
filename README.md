@@ -40,3 +40,6 @@ http://127.0.0.1:8000/
 
 ## SCREENSHOTS
 ### Home Page
+
+<img width="1911" height="921" alt="image" src="https://github.com/user-attachments/assets/1a17c87b-cbae-4a0f-96ca-9a5b2e9f5dec" />
+
