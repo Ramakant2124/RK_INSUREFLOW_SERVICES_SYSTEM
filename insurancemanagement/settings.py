@@ -27,7 +27,14 @@ SECRET_KEY = 'ls@!_(edqp*xy76kvbsst$07at(v^li*2&ew!^$8o(@wa6@a+$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = [
+    "rk-insureflow-services-system.vercel.app",
+    ".vercel.app",
+    "localhost",
+    "127.0.0.1",
+]
+
 
 
 # Application definition
